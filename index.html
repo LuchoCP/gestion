@@ -8,13 +8,18 @@
 </head>
 <body>
   <div class="container">
-    <h1>Gestor de Tareas</h1>
-    <div class="input-container">
+    <h1>Gestión de Tareas</h1>
+    <div class="task-input">
       <input type="text" id="taskInput" placeholder="Escribe una nueva tarea..." />
       <button id="addTaskBtn">Agregar</button>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="pending">Pendientes</button>
+      <button class="filter-btn" data-filter="completed">Completadas</button>
     </div>
     <ul id="taskList"></ul>
   </div>
   <script src="script.js"></script>
 </body>
-</html> 
+</html>
